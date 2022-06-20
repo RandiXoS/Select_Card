@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./sources/normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Game</title>
+</head>
+<body>
+    <h1 class="titulo">Welcome to the Game "Select the correct card"</h1>
+    <div class="container">
+        <div class="container__boxes">
+            <div id="box1" class="box"></div>
+            <div id="box2" class="box"></div>
+            <div id="box3" class="box"></div>
+            <div id="box4" class="box"></div>
+            <div id="box5" class="box"></div>
+            <div id="box6" class="box"></div>
+            <div id="box7" class="box"></div>
+            <div id="box8" class="box"></div>
+            <div id="box9" class="box"></div>
+        </div>
+    </div>
+    <aside class="guide">
+        <img src="./sources/bombilla.png" alt="" class="guide__icon">
+        <h1 style="text-align:center">Misión:</h1>
+        <p>Seleccionar los cuadros y uno de ellos es un impostor y <span class="lose">perderás</span> si lo tocas, serás <span class="win">victorioso</span> si aciertas 8 de 9 y sólo queda el impostor.</p>
+    </aside>
+    <button class="reiniciar" onclick="reset()">Reiniciar</button>
+
+    <script src="./code.js"></script>
+</body>
+</html>

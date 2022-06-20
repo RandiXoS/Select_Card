@@ -1,0 +1,115 @@
+.titulo{
+    text-align: center;
+    background-color: steelblue;
+    color: #f6c864;
+    font-size: 2.5em;
+    margin:0;
+}
+.container{
+    box-sizing: border-box;
+    margin: 1% 1% 0 1%;
+    width: 670px;
+    height: 680px;
+    border: 2px solid black;
+    position: relative;
+}
+.box{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: skyblue;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    box-sizing: border-box;
+}
+.container__boxes{
+    display: inline-block;
+    left: 80px;
+    top: 30px;
+}
+.guide{
+    position: absolute;
+    width: 25vw;
+    height: 60vw;
+    border: 2px solid black;
+    top: 55px;
+    left: 700px;
+    background-color: bisque;
+    box-shadow: 15px 15px 10px gray;
+}
+.guide > p, .guide > h1{
+    font-size: 3vw;
+    margin-left: 3%;
+}
+.guide > h1{
+    margin-top: 15%;
+}
+.guide__icon{
+    position: absolute;
+    width: 30%;
+}
+.lose{
+    color: rgb(176, 52, 52);
+    font-weight: bold;
+}
+.win{
+    color: rgb(29, 170, 24);
+    font-weight: bold;
+}
+/* Cajas individuales */
+#box1{
+    background-color: #ff9f9f;
+}
+#box2{
+    background-color: #bceefe;
+    left: 35%;
+}
+#box3{
+    background-color: #b0fdb0;
+    left: 68%;
+}
+#box4{
+    background-color: #eccbfa;
+    top: 35%;
+}
+#box5{
+    background-color: steelblue;
+    left: 35%;
+    top: 35%;
+}
+#box6{
+    background-color: burlywood;
+    left: 68%;
+    top: 35%;
+}
+#box7{
+    background-color: darkgreen;
+    top: 68%;
+}
+#box8{
+    background-color: darkslateblue;
+    left: 35%;
+    top: 68%;
+}
+#box9{
+    background-color: rgb(230, 176, 58);
+    left: 68%;
+    top: 68%;
+}
+.box:hover{
+    border: 4px solid black;
+}
+.reiniciar{
+    margin:1% 0 0 1%;
+    width: 670px;
+    height: 100px;
+    font-size: 3em;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-weight: bold;
+    background-color: skyblue;
+}
+.reiniciar:hover{
+    background-color: steelblue;
+}
