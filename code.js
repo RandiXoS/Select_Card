@@ -1,9 +1,10 @@
 var listbox;
 let numcard = 0;
 var findnum = "/d+";
-let count = 0;
+var count = 0;
 function RandomNumber(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+    // return Math.floor(Math.random() * (max - min + 1)) + min;
+    return Math.floor(Math.random() * (max - min + 1));
 }
 function action(item){
     // console.log(item);
@@ -17,9 +18,7 @@ function action(item){
     if(parseInt(textnum) == numcard){
         alert("Haz Perdido :c");
         reset();
-        numcard = RandomNumber(1,9);
         console.log("Número Impostor: "+numcard);
-        count = 0;
     }
     //Winner
     else{
@@ -28,14 +27,12 @@ function action(item){
         if(count == 8){
             alert("Felicidades, ganaste!");
             reset();
-            numcard = RandomNumber(1,9);
             console.log("Número Impostor: "+numcard);
-            count = 0;
         }
     }
 }
 function main(){
-    numcard = RandomNumber(1,9);
+    numcard = RandomNumber(1,8);
     console.log("Número Impostor: "+numcard);
     listbox = document.querySelectorAll(".box");
     console.log(listbox);
@@ -51,6 +48,8 @@ function reset(){
         item.classList.add("box");
         
     })
+    numcard = RandomNumber(1,8);
+    count = 0;
     console.clear();
 }
 main();
