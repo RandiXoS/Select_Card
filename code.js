@@ -13,25 +13,29 @@ function action(item){
     console.log(textnum + " " + typeof(textnum));
     textnum = textnum.match(/\d+/g);
     console.log(textnum);
+    //Lose
     if(parseInt(textnum) == numcard){
         alert("Haz Perdido :c");
         reset();
-        numcard = RandomNumber(1,10);
+        numcard = RandomNumber(1,9);
         console.log("Número Impostor: "+numcard);
+        count = 0;
     }
+    //Winner
     else{
         count++;
         console.log("Cont click: "+count);
         if(count == 8){
             alert("Felicidades, ganaste!");
             reset();
-            numcard = RandomNumber(1,10);
+            numcard = RandomNumber(1,9);
             console.log("Número Impostor: "+numcard);
+            count = 0;
         }
     }
 }
 function main(){
-    numcard = RandomNumber(1,10);
+    numcard = RandomNumber(1,9);
     console.log("Número Impostor: "+numcard);
     listbox = document.querySelectorAll(".box");
     console.log(listbox);
